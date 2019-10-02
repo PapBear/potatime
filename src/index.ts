@@ -35,11 +35,11 @@ export class Potato {
 		this._remaining = this.duration;
 		this.interval = setInterval(() => {
 			if (this.active) this._remaining--;
+			options.callback(this._remaining);
 			if (this._remaining <= 0) {
 				this.clear();
 				return;
 			}
-			options.callback(this._remaining);
 		}, 1000);
 		this.active = true;
 	}
