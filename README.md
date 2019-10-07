@@ -8,7 +8,7 @@ Potatime is easy to use javascript timer.
 
 	const { Potato } = require('potatime');
 
-	const potato = new Potato('potatooo');
+	const potato = new Potato('potatoes');
 	const opt = {
 		duration: 10,
 		callback : (remaining) => {
